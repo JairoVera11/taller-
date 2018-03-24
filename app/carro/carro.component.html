@@ -1,0 +1,34 @@
+<!--
+<h2>{{coche.modelo | uppercase}} Detalles </h2>
+<div><span>placa: </span>{{coche.placa}}</div>
+<div><span>modelo: </span>{{coche.modelo}}</div>
+
+<div>
+	<label>nombre:
+	
+		<input type="text" [(ngModel)]="coche.placa" placeholder="placa">
+
+	</label>
+
+
+</div> -->
+
+
+<div>
+	<ul>
+		<li *ngFor="let car of carros">
+			<label>Placa: {{car.placa}} - Modelo: {{car.modelo}} </label>
+		</li>
+	</ul>
+</div>
+
+
+<div>
+	<label>Modelo: 
+	
+		<input type="text" [(ngModel)]="carros.modelo" placeholder="modelo">
+
+	</label>
+
+
+</div>
